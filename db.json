@@ -1,0 +1,60 @@
+{
+  "user": [
+    {
+      "id": "8f58",
+      "name": "ashish ahirwar",
+      "email": "ashishparihar679@gmail.com",
+      "mobile": "6268401268",
+      "password": "12345"
+    },
+    {
+      "id": "48fd",
+      "name": "mp",
+      "email": "@gmail.com",
+      "mobile": "9988776666",
+      "password": "11"
+    },
+    {
+      "id": "28d3",
+      "name": "aryan",
+      "email": "email1",
+      "mobile": "9988776655",
+      "password": "222222"
+    },
+    {
+      "id": "06d3",
+      "name": "mp",
+      "email": "@gmail.com",
+      "mobile": "6268401268",
+      "password": "000000"
+    },
+    {
+      "id": "958d",
+      "name": "ashish ahirwar",
+      "email": "ashishparihar679@gmail.com",
+      "mobile": "6268401268",
+      "password": "111"
+    },
+    {
+      "id": "6c50",
+      "name": "ashish ahirwar",
+      "email": "ashishparihar679@gmail.com",
+      "mobile": "6268401268",
+      "password": "11111"
+    },
+    {
+      "id": "37be",
+      "name": "hiresh",
+      "email": "ankush123@gmail.com",
+      "mobile": "9988776655",
+      "password": "000000000"
+    },
+    {
+      "id": "c5c0",
+      "name": "mp",
+      "email": "ashishparihar679@gmail.com",
+      "mobile": "6268401268",
+      "password": "111"
+    }
+  ]
+}
