@@ -1,9 +1,12 @@
 form {
-  height: 500px;
+  height: 300px;
   width: 500px;
   background-color: bisque;
   border: 4px solid black;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 form fieldset {
@@ -43,4 +46,16 @@ li{
 #p2{
     /* display: inline-block;
 transform: rotate(45deg);  */
+}
+
+#head{
+  display: flex;
+  justify-content:space-evenly;
+  background-color:rgb(69, 51, 202);
+  border: 2px solid burlywood;
+  padding: 20px;
+}
+.p1{
+  color: white;
+  box-shadow: 5px 10px 15px black;
 }

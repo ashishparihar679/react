@@ -15,7 +15,7 @@ const Dashboard = () => {
       <h2>Name: {formdata.name}</h2>
       <h2>Email: {formdata.email}</h2>
       <h2>Mobile: {formdata.mobile}</h2>
-      <h2>Mobile: {formdata.password}</h2>
+      <h2>Password: {formdata.password}</h2>
     </>
   );
 };

@@ -42,7 +42,7 @@ const Page1 = () => {
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder="enter Name"
           value={formdata.name}
           onChange={handleChange}
         />
@@ -51,7 +51,7 @@ const Page1 = () => {
         <input
           type="text"
           name="email"
-          placeholder="Email"
+          placeholder="enter Email"
           value={formdata.email}
           onChange={handleChange}
         />
@@ -60,7 +60,7 @@ const Page1 = () => {
         <input
           type="text"
           name="mobile"
-          placeholder="Mobile"
+          placeholder="enter Mobile"
           value={formdata.mobile}
           onChange={handleChange}
         />
@@ -69,15 +69,15 @@ const Page1 = () => {
         <input
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="enter Password"
           value={formdata.password}
           onChange={handleChange}
         />
         <br />
 
         <button type="submit">Submit</button>
-      </form>
 
+      </form>
       <h1>Your name is: {formdata.name}</h1>
       <h1>Your email is: {formdata.email}</h1>
       <h1>Mobile No.: {formdata.mobile}</h1>
