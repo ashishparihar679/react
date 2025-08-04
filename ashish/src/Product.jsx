@@ -23,12 +23,21 @@ const Product = () => {
       {
         Product.map((e, j) => (
           <>
-          <h1 >ID :- {e.id}</h1>
-          <h1 id="p1"><img  src={e.image} alt="" height="200px" width="200px" /></h1>
-           <h2> <strong>Brand</strong>:- <strong id="p2">{e.title}</strong></h2>
-          <h2>Price :- {e.price}</h2>
-          <p>Decription ;- {e.description.slice(0, 300)}</p>
-          </>
+          <section className="pro1">
+
+          <div className="product-card">
+  <h3 className="product-id">ID: {e.id}</h3>
+  <img className="product-image" src={e.image} alt="product" />
+  <h2 className="product-title">
+    <strong>Brand:</strong> <span>{e.title}</span>
+  </h2>
+  <h2 className="product-price">Price: ₹{e.price}</h2>
+  <p className="product-desc">
+    Description: {e.description.slice(0, 300)}...
+  </p>
+</div>
+          </section>
+</>
         ))
       }
     </>

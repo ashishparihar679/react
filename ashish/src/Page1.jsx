@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './style.css';
 
 import axios from 'axios';
@@ -6,6 +6,12 @@ import { useNavigate } from 'react-router-dom';
 
 const Page1 = () => {
   const navigate = useNavigate();
+
+  
+  const API_URL = 'http://localhost:3001/user';
+  const [userdata,updateuserdata]=useState([]);
+
+  // const validatemail=async
 
   const [formdata, updateform] = useState({
     name: '',
@@ -22,7 +28,6 @@ const Page1 = () => {
     }));
   };
 
-  const API_URL = 'http://localhost:3001/user';
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -37,6 +42,8 @@ const Page1 = () => {
 
   return (
     <>
+    <div className='pA'>
+
       <h1>This is a form using useState and useEffect</h1>
       <form onSubmit={handleSignup}>
         <input
@@ -54,7 +61,7 @@ const Page1 = () => {
           placeholder="enter Email"
           value={formdata.email}
           onChange={handleChange}
-        />
+          />
         <br />
 
         <input
@@ -63,7 +70,7 @@ const Page1 = () => {
           placeholder="enter Mobile"
           value={formdata.mobile}
           onChange={handleChange}
-        />
+          />
         <br />
 
         <input
@@ -72,16 +79,17 @@ const Page1 = () => {
           placeholder="enter Password"
           value={formdata.password}
           onChange={handleChange}
-        />
+          />
         <br />
 
         <button type="submit">Submit</button>
 
       </form>
-      <h1>Your name is: {formdata.name}</h1>
+      {/* <h1>Your name is: {formdata.name}</h1>
       <h1>Your email is: {formdata.email}</h1>
       <h1>Mobile No.: {formdata.mobile}</h1>
-      <h1>Your Password: {formdata.password}</h1>
+      <h1>Your Password: {formdata.password}</h1> */}
+    </div>
     </>
   );
 };

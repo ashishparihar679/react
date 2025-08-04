@@ -5,11 +5,14 @@ const Nav = () => {
    
    <>
    <nav id="head">
-     <Link className='p1' to="/">Page1</Link> 
-      <Link className='p1' to="/Dashboard">Dashboard</Link> 
-      <Link className='p1' to="/Update">update</Link> 
-      <Link className='p1' to="/Product">Product</Link> 
-      <Link className='p1' to="/Superdashboard">Superdashboard</Link>    
+    <h1>LOGO</h1>
+    <ul id="head1">
+     <li><Link className='p1' to="/">Singup</Link> </li>
+      <li><Link className='p1' to="/Dashboard">Dashboard</Link> </li>
+      <li><Link className='p1' to="/Update">update</Link></li> 
+      <li><Link className='p1' to="/Product">Product</Link> </li>
+      <li><Link className='p1' to="/Superdashboard">Superdashboard</Link>   </li> 
+   </ul>
    </nav>
    {/* <li>
     <ul>Page1</ul>

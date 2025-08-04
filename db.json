@@ -1,25 +1,11 @@
 {
   "user": [
     {
-      "id": "1f64",
-      "name": "ashish ahirwar",
-      "email": "ashishparihar679@gmail.com",
-      "mobile": "6268401268",
-      "password": "00000000"
-    },
-    {
-      "id": "2547",
-      "name": "",
+      "name": "mp",
       "email": "",
-      "mobile": "",
-      "password": "555555555"
-    },
-    {
-      "id": "81df",
-      "name": "",
-      "email": "",
-      "mobile": "6268401268",
-      "password": ""
+      "mobile": "+91",
+      "password": "",
+      "id": "81df"
     },
     {
       "id": "b0be",
@@ -29,11 +15,11 @@
       "password": "99999"
     },
     {
-      "id": "1cca",
-      "name": "",
-      "email": "555",
-      "mobile": "2",
-      "password": ""
+      "id": "7c6b",
+      "name": "ashish ahirwar",
+      "email": "",
+      "mobile": "",
+      "password": "0000000000"
     }
   ]
 }
