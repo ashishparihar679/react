@@ -1,25 +1,18 @@
 {
-  "user": [
+  "users": [
     {
-      "name": "mp",
-      "email": "",
-      "mobile": "+91",
-      "password": "",
-      "id": "81df"
+      "id": 1,
+      "name": "Ashish Parihar",
+      "email": "ashish@test.com",
+      "password": "123456",
+      "mobile": "9876543210"
     },
     {
-      "id": "b0be",
-      "name": "mp",
-      "email": "@gmail.com",
-      "mobile": "9988776666",
-      "password": "99999"
-    },
-    {
-      "id": "7c6b",
-      "name": "ashish ahirwar",
-      "email": "",
-      "mobile": "",
-      "password": "0000000000"
+      "id": 2,
+      "name": "Pradeep Kushwaha",
+      "email": "pradeep@test.com",
+      "password": "password",
+      "mobile": "9123456789"
     }
   ]
 }
