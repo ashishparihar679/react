@@ -5,7 +5,7 @@ import "./style.css";
 import { useNavigate } from "react-router-dom";
 
 const Superdashboard = () => {
-  let api_url = "http://localhost:3001/user";
+  let api_url = "http://localhost:3000/users";
   let [initialdata, updatedata] = useState([]);
   const fetchdata = async () => {
       try {

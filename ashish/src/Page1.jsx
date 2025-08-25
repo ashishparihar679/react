@@ -8,7 +8,7 @@ const Page1 = () => {
   const navigate = useNavigate();
 
   
-  const API_URL = 'http://localhost:3001/user';
+  const API_URL = 'http://localhost:3000/users';
   const [userdata,updateuserdata]=useState([]);
 
   // const validatemail=async
