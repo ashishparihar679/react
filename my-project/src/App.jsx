@@ -20,7 +20,7 @@ function App() {
       <Router>
       
      
-      <Enternav/>
+      {/* <Enternav/> */}
       <Routes>
         <Route element={<UserLogin/>} path='/LoginUser'></Route>
         <Route element={<UserSignup/>} path='/signup'></Route>

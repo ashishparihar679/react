@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Signup from "./Signup";
 
 const Login = () => {
   const [namee, setnamee] = useState("");
   const [pass, setpass] = useState("");
   const navigate=useNavigate();
+
+  const reg =()=>{
+    navigate("/signup");
+  }
 
   const handlechange=async (e)=>{
       e.preventDefault();
@@ -17,7 +22,13 @@ const Login = () => {
       );
       if (ash) {
         console.log("Login successful ✅");
-        navigate("/dash", { state: { ash: ash.password } });
+        navigate("/dash", { state: { 
+          name: ash.name,
+      
+    password: ash.password,
+    email: ash.email,     // agar db.json me email ho
+    mobile: ash.mobile 
+         }  });
       } else {
         alert("Invalid username or password ❌");
       }
@@ -34,6 +45,7 @@ const Login = () => {
       //   }
       //   console.log(name);
       //   console.log(pass);
+
     }
   return (
     <>
@@ -49,7 +61,8 @@ const Login = () => {
          />
         <input type="submit" value="ok" />
       </form>
-      
+      <h1>Register</h1>
+      <button onClick={reg}>click</button>
     </>
   );
 };

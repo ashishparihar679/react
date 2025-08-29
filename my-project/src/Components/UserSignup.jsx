@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 const UserSignup = () => {
   const navigate=useNavigate()
-    let API_URL='http://localhost:3000/users'
+    let API_URL='http://localhost:3001/users'
     const[userData,SetUserData]=useState({
         name:"",
         email:"",
