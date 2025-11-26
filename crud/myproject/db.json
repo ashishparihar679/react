@@ -1,0 +1,28 @@
+{
+  "parihar": [
+    {
+      "id": "4",
+      "name": "Sneha Verma",
+      "username": "snehav",
+      "email": "sneha.verma@example.com",
+      "phone": "+91-9876123450",
+      "website": "snehaverma.com"
+    },
+    {
+      "id": "5",
+      "name": "Amit Patel",
+      "username": "amitp",
+      "email": "amit.patel@example.com",
+      "phone": "+91-9123456789",
+      "website": "amitpatel.tech"
+    },
+    {
+      "id": "6",
+      "name": "Neha Gupta",
+      "username": "nehag",
+      "email": "neha.gupta@example.com",
+      "phone": "+91-9845612300",
+      "website": "nehagupta.io"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 0 20px;
+    overflow: hidden;
+}
+
+.footer-text {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from { color: #fff; }
+    to { color: #ffeb3b; }
+}
+
+/* Waves */
+
+.waves {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    background: url("https://i.imgur.com/8yK2FDo.png");
+    background-size: 1000px 100px;
+    opacity: 0.5;
+    animation: waveAnim 5s infinite linear;
+}
+
+#wave1 {
+    bottom: 0;
+    animation-delay: 0s;
+}
+
+#wave2 {
+    bottom: 10px;
+    opacity: 0.7;
+    animation-delay: 1s;
+}
+
+#wave3 {
+    bottom: 15px;
+    opacity: 0.4;
+    animation-delay: 2s;
+}
+
+#wave4 {
+    bottom: 20px;
+    opacity: 0.3;
+    animation-delay: 3s;
+}
+
+@keyframes waveAnim {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

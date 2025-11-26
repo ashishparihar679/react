@@ -92,7 +92,7 @@ export default function Gaana() {
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-white/5"
                   >
-                    Log in
+                    Log in 
                   </a>
                 </div>
               </div>
@@ -139,10 +139,10 @@ export default function Gaana() {
                 href="#"
                 className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
-                Get started
+                Get Register
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
+                Login here <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>

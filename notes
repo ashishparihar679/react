@@ -12,3 +12,20 @@ what is reducer
 
 imp
 
+use effect ka use side effect ko rokne ke liye use hota hai
+3type se use kar sakte
+use effect without depedency
+use effect with depedency
+use effect without empty depedency
+
+
+FORM
+onchange{ } = jab bhi event fire hota hai to ek event object pass hoga to usi value ko target karenge
+
+context api props driling ke disadvanteges ko solve karne ke liye use hota h
+they are three main things
+1. createContext
+2. Provider
+3. Consumer(optional)
+
+jab bhi consumer me data ko recieve karna h to as a function recieve karna padega 

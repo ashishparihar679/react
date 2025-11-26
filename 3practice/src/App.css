@@ -1,24 +1,27 @@
-/* Navbar container */
-nav {
-  background: #1b0e6f;
-  color: white;
-  padding: 10px 20px;
-}
-
-/* Flexbox */
+/* Navbar Base Style */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #222;
+  padding: 10px 20px;
+  color: white;
+  position: fixed;   /* fix navbar */
+  top: 0;            /* stick to top */
+  left: 0;
+  width: 100%;       /* full width */
+  z-index: 1000;     /* stay above content */
+  margin-left: -20px;
+  border: 1px solid rgb(0, 255, 4);
 }
 
-/* Logo */
 .logo {
-  font-size: 20px;
+  font-size: 80px;
   font-weight: bold;
+  margin-left: 30px;
 }
 
-/* Nav links */
+/* Nav Links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -28,37 +31,475 @@ nav {
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 40px;
+  margin-right: 60px;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: yellow;
+  color: #ff9800;
 }
 
-/* Hamburger */
+/* Hamburger Menu Button */
 .menu-btn {
-  display: none;
-  font-size: 25px;
+  font-size: 26px;
   cursor: pointer;
+  display: none; /* hidden on desktop */
 }
 
-/* Responsive for mobile */
+/* ---------------------- */
+/* Responsive Part */
+/* ---------------------- */
 @media (max-width: 768px) {
+  .menu-btn {
+    display: block; /* show hamburger on small screen */
+  }
+
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #1b0e6f;
     position: absolute;
     top: 60px;
-    right: 20px;
-    padding: 10px;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    background: #333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+    gap: 15px;
+    transition: 0.3s ease-in-out;
   }
 
-  .nav-links.show {
-    display: flex;
+  .nav-links.active {
+    right: 0; /* slide in */
+  }
+}
+
+
+
+/* sign up css */
+/* Full page center */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* Form wrapper */
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url("sign.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Container */
+.signup-container {
+  min-height: 650px;         /* height ko min-height kiya */
+  width: 700px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #dad8e6;
+  border: 3px solid rgb(133, 162, 226);
+  box-shadow: 8px 12px 20px rgba(14, 118, 203, 0.3); /* fixed */
+  text-align: center;
+}
+
+/* Title */
+.form-title {
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form inputs */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-input {
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 22px;
+}
+
+/* Register button */
+.form-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-btn:hover {
+  background: #06f60a;
+}
+
+/* Login text + button */
+.login-text {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.login-btn {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2895c8;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 22px;
+}
+
+.login-btn:hover {
+  background: #3207e2;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    width: 90%;
+    padding: 25px;
+    min-height: auto;   /* responsive ke liye */
   }
 
-  .menu-btn {
-    display: block;
+  .form-title {
+    font-size: 28px;
   }
+
+  .form-input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .form-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .login-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+
+/* login ==================================== */
+/* Full page center */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
+  padding: 20px;       
+  box-sizing: border-box;
+  background-image: url("register.jpg");
+  background-size: cover;          
+  background-position: center;   
+  background-repeat: no-repeat;  
+}
+
+/* Container */
+.login-container {
+  min-height: 500px;       /* height बढ़ाई और flexible किया */
+  width: 800px;            /* width बढ़ाई */
+  padding: 50px;           /* अंदर spacing बढ़ाई */
+  border-radius: 18px;
+  background: #dad8e6;
+  border: 3px solid rgb(133, 162, 226);
+  box-shadow: 8px 12px 20px rgba(14, 118, 203, 0.3); /* realistic shadow */
+  text-align: center;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 30px;
+  font-size: 36px;       /* बड़ा किया */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;             /* inputs के बीच ज्यादा gap */
+}
+
+/* Input */
+.login-input {
+  padding: 15px;          /* बड़ा किया */
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 20px;        /* बड़ा किया */
+}
+
+/* Login button */
+.login-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  font-size: 22px;        /* बड़ा किया */
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #06f60a;
+}
+
+/* Register Section */
+.register-title {
+  margin-top: 25px;
+  font-size: 20px;        /* readable किया */
+  color: #333;
+}
+
+.register-btn {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2895c8; 
+  font-size: 20px;        /* बड़ा किया */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #3207e2;
+}
+
+/* ---------------------- */
+/* 📱 Responsive Design   */
+/* ---------------------- */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;   
+    padding: 25px;
+    min-height: auto;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-input {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .login-btn {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .register-title {
+    font-size: 16px;
+  }
+
+  .register-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+
+
+
+/* dash css */
+
+.dashboard {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.dashboard h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #34495e;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* admin css */
+/* Dashboard Container */
+
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* Title */
+.dashboard-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.user-table:hover {
+  transform: scale(1.01);
+}
+
+/* Table Header */
+.user-table thead {
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  color: white;
+}
+
+.user-table th {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Table Body */
+.user-table td {
+  padding: 14px;
+  text-align: center;
+  font-size: 20px;
+  color: #0f0f0f;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* Row Hover Effect */
+.user-table tr:hover {
+  background: #eef2ff;
+  transition: 0.3s ease;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.update-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.cancel-btn {
+  background: #6b7280;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+}
+
+.edit-form input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.edit-form input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 6px rgba(99,102,241,0.4);
+}
+
+/* Form Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }

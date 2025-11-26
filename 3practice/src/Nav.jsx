@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import './App.css'
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import "./App.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,28 +11,26 @@ const Nav = () => {
 
   return (
     <>
-      <nav>
-        <div className="navbar">
-          <div className="logo">MySite</div>
+      <nav className="navbar">
+        <div className="logo">MySite</div>
 
-          {/* Menu Button */}
-          <div className="menu-btn" onClick={toggleMenu}>
-            ☰
-          </div>
-
-          {/* Nav Links */}
-          <ul className={`nav-links ${menuOpen ? "active" : ""}`} id="navLinks">
-            <li><Link to="/">Login</Link></li>
-            <li><Link to="/signup">Signup</Link></li>
-            <li><Link to="/admit">Admin</Link></li>
-            <li><Link to="/dash">Dash</Link></li>
-            <li><Link to="/super">Superdash</Link></li>
-            <li><Link to="/practice">Practice</Link></li>
-          </ul>
+        {/* Hamburger Menu Button */}
+        <div className="menu-btn" onClick={toggleMenu}>
+          ☰
         </div>
+
+        {/* Nav Links */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><Link to="/">Login</Link></li>
+          <li><Link to="/signup">Signup</Link></li>
+          <li><Link to="/admit">Admin</Link></li>
+          <li><Link to="/dash">Dash</Link></li>
+          <li><Link to="/super">Superdash</Link></li>
+          <li><Link to="/practice">Practice</Link></li>
+        </ul>
       </nav>
     </>
-  )
-}
+  );
+};
 
 export default Nav;

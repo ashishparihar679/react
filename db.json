@@ -2,87 +2,107 @@
   "users": [
     {
       "id": "1",
-      "name": "Ashish",
+      "fullName": "Ashish",
+      "userName": "ashish123",
       "email": "ashish@test.com",
       "password": "123",
-      "mobile": "9876543210"
+      "phone": "9876543210"
     },
     {
       "id": "2",
-      "name": "Pradeep Kushwaha",
+      "fullName": "Pradeep Kushwaha",
+      "userName": "pradeepk",
       "email": "pradeep@test.com",
       "password": "12345",
-      "mobile": "9123456789"
+      "phone": "9123456789"
     },
     {
       "id": "3",
-      "name": "Ashish",
+      "fullName": "Ashish Parihar",
+      "userName": "ashishp",
       "email": "ashishparihar679@gmail.com",
       "password": "12345",
-      "mobile": "9876543210"
+      "phone": "9876543210"
     },
     {
       "id": "4",
-      "name": "Aman",
+      "fullName": "Aman Verma",
+      "userName": "amanv",
       "email": "aman123@gmail.com",
       "password": "12345",
-      "mobile": "1234566789"
-    },
-    {
-      "id": "5",
-      "name": "Ankush",
-      "email": "ankush@gmail.com",
-      "password": "12345",
-      "mobile": "6268401268"
+      "phone": "1234566789"
     },
     {
       "id": "7",
-      "name": "Ankush ",
+      "fullName": "Ankush",
+      "userName": "ankush7",
       "email": "kupale@test.com",
       "password": "12345",
-      "mobile": "9000000002"
+      "phone": "9000000002"
     },
     {
       "id": "8",
-      "name": "Ank",
+      "fullName": "Ank Kumar",
+      "userName": "ank8",
       "email": "ank@test.com",
       "password": "12345",
-      "mobile": "9000000003"
+      "phone": "9000000003"
     },
     {
       "id": "9",
-      "name": "Naresh",
-      "email": "naresh@123",
+      "fullName": "Naresh Singh",
+      "userName": "naresh9",
+      "email": "naresh@123.com",
       "password": "12345",
-      "mobile": "9000000004"
+      "phone": "9000000004"
     },
     {
       "id": "10",
-      "name": "Akash",
-      "email": "akash@123jjj",
+      "fullName": "Akash Sharma",
+      "userName": "akash10",
+      "email": "akash@123jjj.com",
       "password": "12345",
-      "mobile": "9000000005"
+      "phone": "9000000005"
     },
     {
       "id": "11",
-      "name": "Rohit",
-      "email": "rohit123",
+      "fullName": "Rohit Yadav",
+      "userName": "rohit11",
+      "email": "rohit123@test.com",
       "password": "12345",
-      "mobile": "9000000006"
-    },
-    {
-      "id": "12",
-      "name": "Unknown",
-      "email": "unknown@test.com",
-      "password": "12345",
-      "mobile": "9000000007"
+      "phone": "9000000006"
     },
     {
       "id": "16",
-      "name": "Ajay",
+      "fullName": "Ajay Kumar",
+      "userName": "ajay16",
       "email": "ajay@test.com",
       "password": "12345",
-      "mobile": "9000000011"
+      "phone": "9000000011"
+    },
+    {
+      "id": "100",
+      "fullName": "Ronit Gupta",
+      "userName": "ronit100",
+      "email": "ronit@gmail.com",
+      "password": "123345",
+      "phone": "9000000013"
+    },
+    {
+      "id": "67",
+      "fullName": "ashish",
+      "userName": "@shish",
+      "password": "12345",
+      "email": "ashish123@gmail.com",
+      "phone": "1234512345"
+    },
+    {
+      "id": "68",
+      "fullName": "abhishek barele",
+      "userName": "abhi123",
+      "password": "12345",
+      "email": "abhishek123@gmail.com",
+      "phone": "1234512345"
     }
   ]
 }
