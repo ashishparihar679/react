@@ -4,7 +4,7 @@ import Child3 from "./Child3";
 import Child4 from "./Child4";
 
 let aryan = createContext()
-let detail = "child 2 se data aya hai"
+let detail = {name:"child 2 se data aya hai",age:20}
 const Child2 = () => {
   return (
     <>

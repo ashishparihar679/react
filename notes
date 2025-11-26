@@ -29,3 +29,5 @@ they are three main things
 3. Consumer(optional)
 
 jab bhi consumer me data ko recieve karna h to as a function recieve karna padega 
+
+agar ham consumer ka use nhi karte h to usecontext ka use kar sakta h
