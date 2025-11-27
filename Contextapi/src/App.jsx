@@ -1,5 +1,4 @@
 import { createContext, useState } from 'react'
-import './App.css'
 import Child2 from './Child2'
 
 let data=createContext()
