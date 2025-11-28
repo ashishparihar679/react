@@ -31,3 +31,5 @@ they are three main things
 jab bhi consumer me data ko recieve karna h to as a function recieve karna padega 
 
 agar ham consumer ka use nhi karte h to usecontext ka use kar sakta h
+
+JAB JAB EVENT FIRE HOGA TAB TAB EVENT OBJECT PASS HOGA
