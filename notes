@@ -33,3 +33,5 @@ jab bhi consumer me data ko recieve karna h to as a function recieve karna padeg
 agar ham consumer ka use nhi karte h to usecontext ka use kar sakta h
 
 JAB JAB EVENT FIRE HOGA TAB TAB EVENT OBJECT PASS HOGA
+
+usenavigate ek huck joki react-router-dom se ata h
