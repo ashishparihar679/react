@@ -1,0 +1,39 @@
+{
+  "userdata": [
+    {
+      "id": "2",
+      "name": "Aryan",
+      "age": 20,
+      "contact": 9876543210,
+      "city": "Bhopal"
+    },
+    {
+      "id": "ecc2",
+      "name": "Vikas",
+      "age": 23,
+      "contact": 9090909090,
+      "city": "Gwalior"
+    },
+    {
+      "id": "325e",
+      "name": "Nitin mridul",
+      "age": 21,
+      "contact": 9876501234,
+      "city": "Jabalpur"
+    },
+    {
+      "id": "40b3",
+      "name": "Karannnnn",
+      "age": "2444",
+      "contact": 9811223344,
+      "city": "Delhi"
+    },
+    {
+      "id": "b72c",
+      "name": "Mmmmmnnn",
+      "age": "177",
+      "contact": 9000012345,
+      "city": "Mumbaiii"
+    }
+  ]
+}
