@@ -18,6 +18,7 @@ const Delete = () => {
       print();
     });
     // window.location.reload();
+    // window.location.reload();
   }
   const handleedit = (id) => {
     let { name, value } = id.target;
